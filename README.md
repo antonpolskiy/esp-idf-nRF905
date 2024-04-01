@@ -13,13 +13,13 @@ ESP-IDF V5.1 is required when using ESP32-C6.
 
 
 # Installation
-```Shell
-git clone https://github.com/nopnop2002/esp-idf-nrf905
-cd esp-idf-nrf905/basic/
-idf.py set-target {esp32/esp32s2/esp32s3/esp32c2/esp32c3/esp32c6}
-idf.py menuconfig
-idf.py flash
+add   
+```yml
+nrf905:
+    git: https://github.com/antonpolskiy/esp-idf-nRF905
 ```
+to your idf_component.yml
+
 
 __Note for ESP32C3__   
 For some reason, there are development boards that cannot use GPIO06, GPIO08, GPIO09, GPIO19 for SPI clock pins.   
